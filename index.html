@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Trang đầu</title>
   </head>
   <body>
-    <h1>Quản Lý Tài Chính</h1>
+    <div class="login">
+      <h2>Đăng nhập</h2>
+      <form action="#" method="POST">
+        <div class="input-group">
+          <label for="Tên">Tên đăng nhập</label>
+          <input type="text" id="Tên" name="Tên" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Đăng nhập</button>
+      </form>
+    </div>
   </body>
 </html>

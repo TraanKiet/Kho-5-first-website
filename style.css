@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  /* Các thuộc tính để đặt ảnh làm nền */
+  background-image: url("img/Background1.jpg"); /* Thay đổi đường dẫn đến ảnh của bạn */
+  background-size: cover; /* Đảm bảo ảnh nền phủ kín toàn bộ màn hình */
+  background-position: center; /* Căn giữa ảnh nền */
+  background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+  background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.login {
+  background-color: rgba(
+    177,
+    223,
+    238,
+    0.664
+  ); /* Thêm độ trong suốt để nhìn thấy nền */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+.login,
+.h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+button:hover {
+  background-color: #00a4b3;
+}
