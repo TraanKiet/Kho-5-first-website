@@ -1,46 +1,66 @@
-body {
-  font-family: Arial, sans-serif;
-  /* Các thuộc tính để đặt ảnh làm nền */
-  background-image: url("img/Background1.jpg"); /* Thay đổi đường dẫn đến ảnh của bạn */
-  background-size: cover; /* Đảm bảo ảnh nền phủ kín toàn bộ màn hình */
-  background-position: center; /* Căn giữa ảnh nền */
-  background-repeat: no-repeat; /* Không lặp lại ảnh nền */
-  background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn */
+/* Sử dụng các lớp nhất quán và sửa cú pháp */
+.main-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  flex-direction: column;
 }
-.login {
-  background-color: rgba(
-    177,
-    223,
-    238,
-    0.664
-  ); /* Thêm độ trong suốt để nhìn thấy nền */
+/* Đổi tên lớp cho dễ hiểu và chuẩn hơn */
+.login-box {
+  background-color: rgba(177, 223, 238, 0.66);
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 350px;
   text-align: center;
 }
-.login,
-.h2 {
+.login-box h2 {
   margin-bottom: 25px;
   color: #333;
 }
-.input-group {
+/* Gom tất cả thuộc tính của phần Đăng ký vào một lớp duy nhất */
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: left; /* Căn lề trái */
+  width: 350px;
+  margin: 0 auto;
+}
+.signup-link a:hover {
+  color: #00d5ffe8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+.signup-link a:active {
+  color: #ff0000; /* Thay đổi màu thành đỏ khi nhấp vào */
+}
+/* Giữ nguyên các phần còn lại */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("img/Background1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.input-group,
+.input-group1 {
   margin-bottom: 20px;
   text-align: left;
 }
-.input-group label {
+.input-group label .input-group1 label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
   color: #555;
 }
-.input-group input {
+.input-group input,
+.input-group1 input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
@@ -48,7 +68,8 @@ body {
   box-sizing: border-box;
   font-size: 16px;
 }
-.input-group input:focus {
+.input-group input:focus,
+.input-group1 input:focus {
   border-color: #007bff;
   outline: none;
 }
