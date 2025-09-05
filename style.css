@@ -5,7 +5,7 @@
 }
 /* Đổi tên lớp cho dễ hiểu và chuẩn hơn */
 .login-box {
-  background-color: rgba(177, 223, 238, 0.66);
+  background-color: rgba(238, 233, 177, 0.66);
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -26,18 +26,18 @@
   margin: 0 auto;
 }
 .signup-link a:hover {
-  color: #00d5ffe8;
+  color: #c6b76de8;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.2s ease;
 }
 .signup-link a:active {
-  color: #ff0000; /* Thay đổi màu thành đỏ khi nhấp vào */
+  color: #b2c37c; /* Thay đổi màu thành đỏ khi nhấp vào */
 }
 /* Giữ nguyên các phần còn lại */
 body {
   font-family: Arial, sans-serif;
-  background-image: url("img/Background1.jpg");
+  background-image: url("img/Background1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,21 +70,21 @@ body {
 }
 .input-group input:focus,
 .input-group1 input:focus {
-  border-color: #007bff;
+  border-color: #cbb49f;
   outline: none;
 }
 button {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
+  background-color: #d4c392;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
 button:hover {
-  background-color: #00a4b3;
+  background-color: #a69c5d;
 }
