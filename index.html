@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="boss.css" />
+    <link rel="stylesheet" href="file/css/boss.css" />
     <title>Trang đầu</title>
   </head>
   <body>
     <script src="main.js"></script>
     <div class="main-container">
       <div class="login-box">
-        <form action="#" method="POST">
+        <form action="#" method="POST" id="loginFormDemo">
           <div class="input-group">
             <label for="Tên">Tên đăng nhập</label>
             <input type="text" id="Tên" name="Tên" required />
@@ -29,5 +29,16 @@
         </div>
       </form>
     </div>
+    <script>
+      // Lấy form
+      const form = document.getElementById("loginFormDemo");
+      const nextPageUrl = "index2.html"; //
+      form.addEventListener("submit", function (event) {
+        // Ngăn chặn form gửi dữ liệu theo cách thông thường
+        event.preventDefault();
+        // Chuyển hướng trình duyệt đến trang tiếp theo
+        window.location.href = nextPageUrl;
+      });
+    </script>
   </body>
 </html>
