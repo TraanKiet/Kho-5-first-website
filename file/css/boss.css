@@ -36,7 +36,7 @@
 }
 /* Giữ nguyên các phần còn lại */
 body {
-  background-image: url("/img/Background1.png");
+  background-image: url("../../img/Background1.png");
   font-family: Arial, sans-serif;
   background-size: cover;
   background-position: center;
