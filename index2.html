@@ -8,25 +8,33 @@
     <title>Giao diện</title>
   </head>
   <body>
-    <div class="header fixed">
-      <div class="main-content">
-        <div class="body-header">
-          <!-- Logo -->
-          <img src="" alt="" />
-          <!-- nav -->
-          <nav class="nav">
-            <ul>
-              <li><a href="#!">Giới Thiệu</a></li>
-              <li><a href="#!">Liên Hệ</a></li>
-              <li><a href="#!">Tài Khoản</a></li>
-              <li><a href="#!">Check</a></li>
-            </ul>
-          </nav>
-          <!-- Button -->
-            <div class="action">
-               <a href="#!" class="btn">Đăng Nhập</a>
-        </div>
-      </div>
+    <header id="navbar">
+      <a href="#" class="nav-item" data-content="Trang Chủ">Trang Chủ</a>
+      <a href="#" class="nav-item" data-content="Giới Thiệu">Giới Thiệu</a>
+      <a href="#" class="nav-item" data-content="Liên Hệ">Liên Hệ</a>
+    </header>
+    <div id="main-container">
+      <nav id="sidebar">
+        <ul>
+          <li>
+            <a href="#" class="sidebar-item" data-content="Mục 1">Mục Dọc 1</a>
+          </li>
+          <li>
+            <a href="#" class="sidebar-item" data-content="Mục 2">Mục Dọc 2</a>
+          </li>
+          <li>
+            <a href="#" class="sidebar-item" data-content="Mục 3">Mục Dọc 3</a>
+          </li>
+          <li>
+            <a href="#" class="sidebar-item" data-content="Mục4">Mục Dọc 4</a>
+          </li>
+        </ul>
+      </nav>
+      <main id="content-area">
+        <h1>Chào mừng đến với Website của tôi!</h1>
+        <p>Đây là nội dung ban đầu.</p>
+      </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
