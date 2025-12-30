@@ -14,7 +14,7 @@ body {
 }
 /* --- 1. Thanh Ngang (Navbar) --- */
 #navbar {
-  background-color: #686868;
+  background-color: #828080;
   color: white;
   padding: 10px 20px;
   display: flex; /* Dùng Flexbox để sắp xếp các mục theo chiều ngang */
@@ -35,7 +35,7 @@ body {
 }
 /* --- 2a. Cột Dọc (Sidebar) --- */
 #sidebar {
-  width: 150px; /* Độ rộng cố định cho cột dọc */
+  width: 190px; /* Độ rộng cố định cho cột dọc */
   background-color: #f4f4f4;
   padding: 15px;
   border-right: 1px solid #000000;
