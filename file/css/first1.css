@@ -38,6 +38,7 @@ body {
   width: 190px; /* Độ rộng cố định cho cột dọc */
   background-color: #f4f4f4;
   padding: 15px;
+  flex-shrink: 0; /* Không cho phép cột dọc co lại */
   border-right: 1px solid #000000;
   overflow: auto;
 }
@@ -64,4 +65,8 @@ body {
   flex-grow: 1; /* Quan trọng: Chiếm hết phần không gian còn lại */
   padding: 20px;
   background-color: white;
+}
+#content-area p {
+  line-height: 1.4; /* Giúp giãn dòng, dễ đọc hơn */
+  max-width: 700px; /* Ngăn dòng chữ quá dài gây mỏi mắt */
 }
